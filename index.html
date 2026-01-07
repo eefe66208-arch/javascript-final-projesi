@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günün Şakaları</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="neon-text">GÜNÜN</span>ŞAKASI</h1>
+        <p>Günün şakasını öğrenmek için👇</p>
+    </header>
+
+    <section id="search-container">
+        <input type="text" id="searchInput" placeholder="Şaka içinde örn: bug, java...">
+        <select id="categoryFilter">
+            <option value="all">Tüm Kategoriler</option>
+            <option value="twopart">Soru-Cevap</option>
+            <option value="single">Tek Satır</option>
+        </select>
+        <button id="searchBtn">ARA</button>
+    </section>
+
+    <div id="statusMessage" class="status-msg"></div>
+
+    <main id="card-container" class="grid-layout">
+        </main>
+
+    <div id="detailModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+         <h2 id="modalTitle">Şaka Detayı</h2>
+            <div id="modalBody">
+                </div>          <div class="modal-footer">
+                <button id="closeModalBtn">Kapat</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="cyber-footer">
+        <div class="footer-section">           <h3>HAKKIMIZDA</h3>
+            <p>Bu proje, JokeAPI kullanılarak geliştirilmiş, tek bir JavaScript final projesidir.</p>
+        </div>
+        <div class="footer-section">
+            <h3>İLETİŞİM</h3>      
+            <p><a href="mailto:efee94868@gmail.com"></a> E-Posta: efee94868@gmail.com</p>
+            <p><a href="https://github.com/eefe66208-arch">GitHub Profilim İçin Tıkla</a></p>
+           
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
